@@ -4,9 +4,12 @@
   "description": "",
   "main": "main.js",
   "dependencies": {
+    "gulp-rimraf": "^0.1.1",
     "jquery": "^2.1.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-uglify": "^1.2.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
