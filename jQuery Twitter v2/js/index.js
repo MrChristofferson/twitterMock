@@ -69,7 +69,7 @@ $(function () {
       var twitterId = replyTweet.siblings('.tweet').attr('id')
       var tweetId = twitterId.split('-')[1]
       postReply(currentUser, tweetId, message)
-    } else {
+    } else {  
       postTweet(currentUser, message)
     }
 
@@ -90,7 +90,6 @@ $(function () {
                 if (reply.userId === user.id) {
                   var html = renderTweet(user, reply.message, reply.tweetId)
                   var search = $('#tweet-' + reply.tweetId).siblings('.replies').append(html)
-                  search
                 }
               })
             })
